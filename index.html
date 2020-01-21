@@ -2,28 +2,182 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Ejemplo</title>
 </head>
 
 <body>
-    <h1>Ejemplo de HTML5</h1>
+    <header>
+        <h1>Ejemplo de HTML5</h1>
 
-    <h2>Ejemplo título 2</h2>
+        <h2>Ejemplo t&iacute;tulo 2</h2>
 
-    <h3>Título 3</h3>
+        <h3>Título 3</h3>
 
-    <h4>Título 4</h4>
+        <h4>Título 4</h4>
 
-    <h5>Título 5</h5>
+        <h5>Título 5</h5>
 
-    <h6>Título 6</h6>
+        <h6>Título 6</h6>
 
-    <p>Lorem ipsum <strong>dolor</strong> sit amet, <em>consectetur</em> adipisicing elit. Eius placeat voluptatem obcaecati corporis aliquam maxime voluptas omnis.<br /> Saepe hic iure eligendi qui molestias aperiam atque deserunt, numquam reiciendis, facilis quis!</p>
+    </header>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident qui facilis, molestiae animi voluptatum incidunt voluptas corrupti laboriosam minus earum nam non, nulla, unde consequatur doloremque maiores. Reiciendis, perspiciatis.</p>
+    <nav>
+        <!--ul>li*3>a[href="#"]{Vínculo $}-->
+        <ul>
+            <li><a href="#parrafos">Párrafos</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="segunda.html#parte">Otra página</a></li>
+        </ul>
+    </nav>
 
-    <div>
+    <main>
+        <article>
+            <h2>HTML</h2>
+
+            <section id="parrafos">
+                <h3>Párrafos</h3>
+
+                <p>Johnsons &amp; Johnsons</p>
+
+                <p>Lorem ipsum <strong>dolor</strong> sit amet, <em>consectetur</em> adipisicing elit. Eius placeat voluptatem obcaecati corporis aliquam maxime voluptas omnis.<br /> Saepe hic iure eligendi qui molestias aperiam atque deserunt, numquam reiciendis, facilis quis!</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident qui facilis, molestiae animi voluptatum incidunt voluptas corrupti laboriosam minus earum nam non, nulla, unde consequatur doloremque maiores. Reiciendis, perspiciatis.
+                    Pepe,&nbsp;Juan,&nbsp;Pedro,&nbsp;Josu&nbsp;Arrigomulakoetxea</p>
+            </section>
+
+            <section id="listas">
+                <h3>Listas</h3>
+                <ul>
+                    <li>Uno</li>
+                    <li>Dos</li>
+                </ul>
+
+                <ol>
+                    <li>Primero</li>
+                    <li>Segundo</li>
+                </ol>
+
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markup Language</dd>
+
+                    <dt>CSS</dt>
+                    <dd>Cascade Style Sheets</dd>
+
+                    <dt>JS</dt>
+                    <dd>JavaScript</dd>
+                </dl>
+            </section>
+
+            <section id="imagenes">
+                <h3>Imágenes</h3>
+
+                <dl>
+                    <dt>GIF</dt>
+                    <dd>Graphic Interchange Format. 256 colores. Animación. Transparencia. Compresión NO destructiva. Memes.</dd>
+
+                    <dt>JPEG</dt>
+                    <dd>Joint Photographers Experts Group. 24 bits (16 millones de colores). Compresión destructiva. Fotos</dd>
+
+                    <dt>PNG</dt>
+                    <dd>Portable Network Graphics. 24 bits (16 millones de colores). Compresión NO destructiva. Transparencia. Imágenes más "planas".</dd>
+
+                    <dt>SVG</dt>
+                    <dd>Structured Vector Graphics. Dibujo Vectorial. </dd>
+                </dl>
+
+                <p>
+                    <figure>
+                        Hola <img src="imgs/ipartek-formacion-logo.png" alt="Logotipo" /> que tal.
+                        <figcaption>Logo de Ipartek</figcaption>
+                    </figure>
+                </p>
+            </section>
+
+            <section id="mapas">
+                <h3>Mapas</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762267202265!2d-2.9135920000000017!3d43.25640399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1579634642965!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </section>
+
+            <section id="multimedia">
+                <h3>Multimedia</h3>
+                <audio controls autoplay>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                </audio>
+                <video controls autoplay>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yGA0jBOSX9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </article>
+        <article id="tablas">
+            <!--<table border="1">-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--tr*10>(td>{$})+(td>{Nombre$})-->
+                    <tr>
+                        <td>1</td>
+                        <td>Nombre1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nombre2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nombre3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Nombre4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nombre5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Nombre6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Nombre7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Nombre8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Nombre9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Nombre10</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+
+    <aside>
         <!-- Lista de enlaces -->
         <ul>
             <li>
@@ -33,19 +187,13 @@
                 <a href="https://html.spec.whatwg.org/">Living Standard HTML</a>
             </li>
         </ul>
-    </div>
+    </aside>
 
-    <div>
-        <ul>
-            <li>Uno</li>
-            <li>Dos</li>
-        </ul>
-
-        <ol>
-            <li>Primero</li>
-            <li>Segundo</li>
-        </ol>
-    </div>
+    <footer>
+        <p>
+            &copy; 2020 Javier Lete
+        </p>
+    </footer>
 </body>
 
 </html>
