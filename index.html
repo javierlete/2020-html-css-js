@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Ejemplo</title>
+
+    <meta name="description" content="Ejemplos de HTML" />
+    
+    <link rel="stylesheet" href="css/ipartek.css" />
 </head>
 
 <body>
@@ -87,17 +91,16 @@
                     <dd>Structured Vector Graphics. Dibujo Vectorial. </dd>
                 </dl>
 
-                <p>
-                    <figure>
-                        Hola <img src="imgs/ipartek-formacion-logo.png" alt="Logotipo" /> que tal.
-                        <figcaption>Logo de Ipartek</figcaption>
-                    </figure>
-                </p>
+
+                <figure>
+                    <img src="imgs/ipartek-formacion-logo.png" alt="Logotipo" />
+                    <figcaption>Logo de Ipartek</figcaption>
+                </figure>
             </section>
 
             <section id="mapas">
                 <h3>Mapas</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762267202265!2d-2.9135920000000017!3d43.25640399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1579634642965!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762267202265!2d-2.9135920000000017!3d43.25640399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1579634642965!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
             </section>
 
             <section id="multimedia">
@@ -112,68 +115,160 @@
                     Your browser does not support the video tag.
                 </video>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yGA0jBOSX9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yGA0jBOSX9w" allowfullscreen style="border:0;"></iframe>
             </section>
-        </article>
-        <article id="tablas">
-            <!--<table border="1">-->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nombre</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--tr*10>(td>{$})+(td>{Nombre$})-->
-                    <tr>
-                        <td>1</td>
-                        <td>Nombre1</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Nombre2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Nombre3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Nombre4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Nombre5</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Nombre6</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Nombre7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Nombre8</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Nombre9</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Nombre10</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nombre</th>
-                    </tr>
-                </tfoot>
-            </table>
+
+            <section id="tablas">
+                <h3>Tablas</h3>
+                <!--<table border="1">-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--tr*10>(td>{$})+(td>{Nombre$})-->
+                        <tr>
+                            <td>1</td>
+                            <td>Nombre1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nombre2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Nombre3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Nombre4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Nombre5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Nombre6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Nombre7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Nombre8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Nombre9</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nombre10</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="formularios">
+                <h3>Formularios</h3>
+
+                <form action="https://www.google.es/search">
+                    <fieldset>
+                        <legend>Formulario de Google</legend>
+
+                        <div>
+                            <label for="consulta">Consulta</label>
+                            <input type="text" id="consulta" name="q" required />
+                        </div>
+
+                        <div>
+                            <button>Buscar con Google</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Inputs</legend>
+
+                        <input type="password" name="password" />
+
+                        <input type="email" placeholder="Email" />
+
+                        <input type="tel" placeholder="Teléfono" />
+
+                        <input type="url" placeholder="URL" />
+
+                        <input type="number" step=".01" min="0" max="100" placeholder="€uros" />
+
+                        <input pattern="\d{5}" placeholder="Código Postal (01234)" />
+
+                        <input pattern="^[A-Za-z ñÑáéíóú\d]*$" maxlength="20" placeholder="Comentarios (sólo letras, números y espacios)" />
+
+                        <input type="date" />
+
+                        <input type="datetime-local" />
+
+                        <input type="checkbox" />
+
+                        <input type="radio" name="estadocivil" value="Soltero" />
+
+                        <input type="radio" name="estadocivil" value="Casado" />
+
+                        <input type="color" />
+
+                        <input type="file" />
+
+                        <input type="hidden" name="clave" value="valor" />
+
+                        <input type="range" />
+
+                        <input type="reset" />
+
+                        <input type="submit" value="Enviar" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <textarea placeholder="Comentarios"></textarea>
+
+                        <select>
+                            <optgroup label="Números">
+
+                                <option value="1">Uno</option>
+                                <option selected>Dos</option>
+                            </optgroup>
+
+                            <optgroup label="Letras">
+                                <option>A</option>
+                                <option>B</option>
+
+                            </optgroup>
+                        </select>
+
+                        <select multiple>
+                            <optgroup label="Números">
+                                <option value="1">Uno</option>
+                                <option selected>Dos</option>
+                            </optgroup>
+
+                            <optgroup label="Letras">
+                                <option>A</option>
+                                <option>B</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                </form>
+            </section>
         </article>
     </main>
 
@@ -194,6 +289,4 @@
             &copy; 2020 Javier Lete
         </p>
     </footer>
-</body>
-
-</html>
+</body></html>
