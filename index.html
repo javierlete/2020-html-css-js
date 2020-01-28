@@ -6,8 +6,12 @@
     <title>Ejemplo</title>
 
     <meta name="description" content="Ejemplos de HTML" />
-    
+
     <!--<link rel="stylesheet" href="css/reset.css" />-->
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    
     <link rel="stylesheet" href="css/ipartek.css" />
 </head>
 
@@ -107,7 +111,7 @@
 
             <section id="mapas">
                 <h3>Mapas</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762267202265!2d-2.9135920000000017!3d43.25640399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1579634642965!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762267202265!2d-2.9135920000000017!3d43.25640399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1579634642965!5m2!1ses!2ses" allowfullscreen=""></iframe>
             </section>
 
             <section id="multimedia">
@@ -122,7 +126,9 @@
                     Your browser does not support the video tag.
                 </video>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yGA0jBOSX9w" allowfullscreen style="border:0;"></iframe>
+                <div class="youtube">
+                    <iframe src="https://www.youtube.com/embed/yGA0jBOSX9w" allowfullscreen></iframe>
+                </div>
             </section>
 
             <section id="tablas">
@@ -189,6 +195,26 @@
             <section id="formularios">
                 <h3>Formularios</h3>
 
+                <form action="#" id="login">
+                    <fieldset>
+                        <legend>Formulario de Login</legend>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" />
+                        </div>
+
+                        <div>
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" />
+                        </div>
+
+                        <div>
+                            <button>Login</button>
+                        </div>
+                    </fieldset>
+                </form>
+
                 <form action="https://www.google.es/search">
                     <fieldset>
                         <legend>Formulario de Google</legend>
@@ -234,7 +260,10 @@
 
                         <input type="color" />
 
-                        <input type="file" />
+                        <label for="fichero">
+                            Seleccionar&nbsp;archivo
+                        </label>
+                        <input type="file" id="fichero" />
 
                         <input type="hidden" name="clave" value="valor" />
 
@@ -283,17 +312,41 @@
         <!-- Lista de enlaces -->
         <ul>
             <li>
-                <a href="https://uniwebsidad.com/libros/xhtml">Uniwebsidad XHTML</a>
+                <a href="https://uniwebsidad.com/libros">Uniwebsidad XHTML, CSS, JavaScript, jQuery, Bootstrap 3</a>
             </li>
             <li>
                 <a href="https://html.spec.whatwg.org/">Living Standard HTML</a>
             </li>
+            <li>
+                <a href="https://fonts.google.com">Tipos de letra de Google</a>
+            </li>
+            <li>
+                <a href="https://cssdiner.com">Juego de selectores de CSS</a>
+            </li>
+            <li>
+                <a href="https://www.css3maker.com/">Efectos de CSS3</a>
+            </li>
+            <li>
+                <a href="https://flexboxfroggy.com/#es">Juego de FlexBox (CSS)</a>
+            </li>
+            
+            <li>
+                <a href="https://cssgridgarden.com/#es">Juego de Grid (CSS)</a>
+            </li>
+
+            <li>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Referencia de Flexbox (CSS)</a>
+            </li>
+            <li>
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Referencia de Grid (CSS)</a>
+            </li>
+            
         </ul>
     </aside>
 
     <footer>
         <p>
-            &copy; 2020 Javier Lete
+            &copy; 2020 Made with <i class="fas fa-heart"></i> by Javier Lete
         </p>
     </footer>
 </body></html>

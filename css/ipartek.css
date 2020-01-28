@@ -1,7 +1,21 @@
+/*@import url('https://fonts.googleapis.com/css?family=Faster+One|Roboto:400,400i,700,700i&display=swap');*/
+
+@import url('fonts.css');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.75em;
     margin: 0;
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 3em;
+    font-weight: normal;
 }
 
 a {
@@ -14,7 +28,8 @@ a:hover {
     text-decoration: underline;
 }
 
-h3:before, h3:after {
+main h3:before,
+main h3:after {
     content: '';
     width: 1em;
     height: 1em;
@@ -24,16 +39,21 @@ h3:before, h3:after {
     background-repeat: no-repeat;
 }
 
-h3:before {
+main h3:before {
     margin-right: 0.3em;
 }
 
-h3:after {
+main h3:after {
     margin-left: 0.3em;
 }
-body > header, body > aside, body > footer {
-    background-color: #111111; /* black; */
-    color: #eeeeee; /* white; */
+
+body > header,
+body > aside,
+body > footer {
+    background-color: #111111;
+    /* black; */
+    color: #eeeeee;
+    /* white; */
 }
 
 body > header {
@@ -46,10 +66,10 @@ body > header h1 {
     text-align: center;
 }
 
-body > header h2, 
-body > header h3, 
-body > header h4, 
-body > header h5, 
+body > header h2,
+body > header h3,
+body > header h4,
+body > header h5,
 body > header h6 {
     display: inline-block;
 }
@@ -98,7 +118,8 @@ main p {
     text-align: justify;
 }
 
-dt, dd {
+dt,
+dd {
     margin: 0.5em 0;
 }
 
@@ -122,10 +143,15 @@ dd:before {
     width: 100%;
 }
 
-figure {
+figure,
+iframe,
+video,
+audio {
+    margin-left: 0;
     border: 2px solid #4e4e4e;
-    padding: 1em;;
+    padding: 1em;
     border-radius: 4px;
+    width: 100%;
 }
 
 figcaption {
@@ -133,6 +159,141 @@ figcaption {
     font-size: 0.75em;
     color: #4e4e4e;
 }
+
+iframe {
+    width: 100%;
+
+}
+
 aside li {
     list-style: none;
+}
+
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+thead,
+tfoot {
+    background: black;
+    color: white;
+}
+
+thead th:first-child,
+tfoot th:first-child,
+tbody td:first-child {
+    text-align: right;
+    padding: 0.5em 1em;
+    width: 5em;
+}
+
+thead th:last-child,
+tfoot th:last-child,
+tbody td:last-child {
+    text-align: left;
+    padding: 0.5em 1em;
+}
+
+tbody tr:nth-child(even) {
+    background: lightgray;
+}
+
+button,
+input[type=submit],
+input[type=reset],
+label[for=fichero] {
+    background-color: darkblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+label[for=fichero]:hover {
+    background-color: blue;
+}
+
+input[type=file] {
+    display: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#login div {
+    margin: 1em;
+    display: flex;
+    align-items: baseline;
+}
+
+#login label {
+    width: 7em;
+    text-align: right;
+    padding-right: 1em;
+}
+
+input {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#login input {
+    flex-grow: 1;
+}
+
+#login div:nth-child(4) {
+    margin-left: 8em;
+    padding-left: 5px;
+}
+
+aside {
+    padding: 1em;
+}
+
+aside ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+aside li {
+    padding: 0.5em;
+}
+
+aside a {
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+footer {
+    padding: 1em;
 }
