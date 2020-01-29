@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +12,14 @@
     <style>
         .breadcrumb-item+.breadcrumb-item::before {
             content: ">";
+        }
+
+        label {
+            color: red;
+        }
+
+        body>.alert-info {
+            background-color: aquamarine;
         }
     </style>
     <title>Ejemplo Bootstrap</title>
@@ -33,6 +42,43 @@
 
     </header>
 
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ejemplo Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
     <nav>
         <!--ul>li*3>a[href="#"]{Vínculo $}-->
         <ul class="list-inline">
@@ -45,18 +91,129 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item"><a href="#" data-toggle="modal" data-target="#exampleModalScrollable">Tocho legal</a></li>
             <li class="breadcrumb-item active" aria-current="page">Data</li>
         </ol>
     </nav>
     <div class="alert alert-info alert-dismissible fade show" role="alert">
         <h4 class="alert-heading">Ejemplo de alerta</h4>
         Bienvenidos a esta página
+        <img class="img-fluid rounded" src="imgs/imagen.jpg" />
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <main>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sit quas labore architecto voluptatem ad dolorem modi! Nostrum iusto aliquid, ea quia natus, totam vitae esse deleniti odit perferendis officia.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="jumbotron">
+            <p class="display-1">El lenguaje que cambiará tu vida</p>
+        </header>
+        <article class="row">
+            <h2>Bootstrap</h2>
+
+            <section class="col-12">
+                <h3>Cards</h3>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/286/214.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 1</h5>
+                                <p class="card-text">Producto que me lo quitan de las manos...</p>
+                                <a href="#" class="btn btn-primary">¡COMPRA, COMPRA!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </article>
         <article class="row">
             <h2 class="display-4 col-12">HTML</h2>
 
@@ -221,14 +378,19 @@
                         <fieldset>
                             <legend>Formulario de Login</legend>
 
-                            <div>
+                            <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" />
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input class="form-control" type="email" id="email" />
+                                </div>
                             </div>
 
-                            <div>
+                            <div class="form-group">
                                 <label for="password">Contraseña</label>
-                                <input type="password" id="password" />
+                                <input class="form-control" type="password" id="password" />
                             </div>
 
                             <div>
@@ -275,11 +437,16 @@
 
                                 <input type="datetime-local" />
 
-                                <input type="checkbox" />
+                                <input class="form-control" type="checkbox" />
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary active">
+                                        <input type="radio" name="estadocivil" value="Soltero"> Soltero
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="estadocivil" value="Casado"> Casado
+                                    </label>
+                                </div>
 
-                                <input type="radio" name="estadocivil" value="Soltero" />
-
-                                <input type="radio" name="estadocivil" value="Casado" />
 
                                 <input type="color" />
 
@@ -298,9 +465,9 @@
                             </fieldset>
                             <fieldset class="col-md-6">
                                 <legend>Otros</legend>
-                                <textarea placeholder="Comentarios"></textarea>
+                                <textarea class="form-control" placeholder="Comentarios"></textarea>
 
-                                <select>
+                                <select class="form-control">
                                     <optgroup label="Números">
 
                                         <option value="1">Uno</option>
@@ -314,7 +481,7 @@
                                     </optgroup>
                                 </select>
 
-                                <select multiple>
+                                <select class="form-control" multiple>
                                     <optgroup label="Números">
                                         <option value="1">Uno</option>
                                         <option selected>Dos</option>
@@ -336,35 +503,35 @@
     <aside class="row">
         <!-- Lista de enlaces -->
         <div class="col-12">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="https://uniwebsidad.com/libros">Uniwebsidad XHTML, CSS, JavaScript, jQuery, Bootstrap 3</a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://uniwebsidad.com/libros">Uniwebsidad XHTML, CSS, JavaScript, jQuery, Bootstrap 3</a>
                 </li>
-                <li>
-                    <a href="https://html.spec.whatwg.org/">Living Standard HTML</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://html.spec.whatwg.org/">Living Standard HTML</a>
                 </li>
-                <li>
-                    <a href="https://fonts.google.com">Tipos de letra de Google</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://fonts.google.com">Tipos de letra de Google</a>
                 </li>
-                <li>
-                    <a href="https://cssdiner.com">Juego de selectores de CSS</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://cssdiner.com">Juego de selectores de CSS</a>
                 </li>
-                <li>
-                    <a href="https://www.css3maker.com/">Efectos de CSS3</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.css3maker.com/">Efectos de CSS3</a>
                 </li>
-                <li>
-                    <a href="https://flexboxfroggy.com/#es">Juego de FlexBox (CSS)</a>
-                </li>
-
-                <li>
-                    <a href="https://cssgridgarden.com/#es">Juego de Grid (CSS)</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://flexboxfroggy.com/#es">Juego de FlexBox (CSS)</a>
                 </li>
 
-                <li>
-                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Referencia de Flexbox (CSS)</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://cssgridgarden.com/#es">Juego de Grid (CSS)</a>
                 </li>
-                <li>
-                    <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Referencia de Grid (CSS)</a>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Referencia de Flexbox (CSS)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/">Referencia de Grid (CSS)</a>
                 </li>
 
             </ul>
